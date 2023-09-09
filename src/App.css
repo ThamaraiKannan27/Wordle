@@ -1,0 +1,153 @@
+.App {
+  text-align: center;
+  background-color: #121212;
+  width: 100vw;
+  height: 100vh;
+  /* display: flex; */
+  color: white;
+}
+.gameOver{
+  color: #528d4e;
+}
+body {
+  padding: 0%;
+  margin: 0;
+}
+
+nav {
+  font-size: xx-large;
+  height: 60px;
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid grey;
+  display: grid;
+  place-items: center;
+}
+.title{
+  text-shadow: 5px 5px 10px rgb(148, 215, 223);
+}
+nav h1 {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 45px;
+}
+.game {
+  width: 100vw;
+  height: calc(100vh - 170px);
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  flex-direction: column;
+}
+
+.board {
+  width: 450px;
+  height: 400px;
+  border: 1px solid rgb(239, 234, 234);
+  display: flex;
+  flex-direction: column;
+ 
+  
+}
+
+.row {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  margin: 3px;
+}
+
+.letter {
+  flex: 33%;
+  height: 80%;
+  border: 2px solid grey;
+  margin: 4px;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#correct {
+  background-color: #a7e36c;
+}
+
+#almost {
+  background-color: #dbca73;
+}
+
+#error {
+  background-color: #e77e7e;
+}
+
+.keyboard {
+  width: 700px;
+  height: 300px;
+  margin-top: 60px;
+}
+
+.line1 {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.line2 {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+.line3 {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+
+.key {
+  width: 50px;
+  height: 70px;
+  margin: 5px;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  background-color: grey;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+#disabled {
+  background-color: #df4545;
+}
+.restart{
+ display: inline-block;
+            padding: 15px 30px;
+            margin-top: 20%;
+            font-size: 18px;
+            background-color: #007BFF; /* Background color */
+            color: #fff; /* Text color */
+            border: none;
+            border-radius: 10px;
+            
+            text-align: center;
+            
+            transition: background-color 0.3s ease;
+}
+.gameOver{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  
+}
+.restart:hover{
+  background-color: #a7e36c;
+}
